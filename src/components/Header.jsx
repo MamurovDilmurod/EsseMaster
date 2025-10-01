@@ -17,7 +17,13 @@ const Header = () => {
                     </p> */}
                 </div>
 
-
+                {/* Title Mobile */}
+                <div className="md:hidden flex">
+                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight md:leading-snug">
+                        SAT matematikdan <span className="text-blue-600">700+ ball</span> olish va{" "}
+                        <span className="block md:inline">Testlarni oson yechish usullari. </span>
+                    </h1>
+                </div>
                 {/* RIGHT IMAGE MOBILE */}
                 <div className="md:hidden flex justify-center mb-1">
                     <img
@@ -52,42 +58,48 @@ const Header = () => {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight md:leading-snug">
-                        SAT matematikdan <span className="text-blue-600">700+ ball</span> olish va{" "}
-                        <span className="block md:inline">Testlarni oson yechish usullari. </span>
-                    </h1>
+                    <div className="hidden md:flex">
+                        <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight md:leading-snug">
+                            SAT matematikdan <span className="text-blue-600">700+ ball</span> olish va{" "}
+                            <span className="block md:inline">Testlarni oson yechish usullari. </span>
+                        </h1>
+                    </div>
                     {/* Mobileda btn */}
-                    <a
-                        href="https://t.me/+gpMBfd7Ka29iYWMy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className=" justify-center px-8 py-3 bg-blue-500 text-white text-base font-semibold rounded-lg 
+                    <div className=" relative top-[-65px]">
+                        <a
+                            href="https://t.me/+gpMBfd7Ka29iYWMy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=" justify-center px-8 py-4 bg-blue-500 text-white text-base font-semibold rounded-lg 
                        hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 text-center md:hidden flex"
-                    >
-                        BEPUL QATNASHISH
-                    </a>
+                        >
+                            BEPUL QATNASHISH
+                        </a>
+                    </div>
                     {/* Subtitle */}
-                    <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-                        Vebinarda siz bilan:
-                    </h2>
+                    <div className="!mt-[-25px]">
+                        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+                            Vebinarda siz bilan:
+                        </h2>
 
-                    {/* Benefits */}
-                    <ul className="space-y-4 text-gray-700 text-lg sm:text-xl">
-                        <li className="flex items-center gap-3">
-                            <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                            Qanday qilib ingliz tilini bilmasangiz ham 2 oyda SAT MATH’dan 700+ ball olish formulasi
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                            SAT testlarini oson yechish usullari.
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                            SAT sertifikati orqali 50% ustama olish imkoniyatlarini bilib olasiz
-                        </li>
-                    </ul>
+                        {/* Benefits */}
+                        <ul className="space-y-4 text-gray-700 text-lg sm:text-xl">
+                            <li className="flex items-center gap-3">
+                                <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                                Qanday qilib ingliz tilini bilmasangiz ham 2 oyda SAT MATH’dan 700+ ball olish formulasi
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                                SAT testlarini oson yechish usullari.
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <FaCheckCircle className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                                SAT sertifikati orqali 50% ustama olish imkoniyatlarini bilib olasiz
+                            </li>
+                        </ul>
 
 
+                    </div>
                     {/* CTA Button */}
                     <a
                         href="https://t.me/+gpMBfd7Ka29iYWMy"
@@ -126,7 +138,7 @@ const Header = () => {
                     href="https://t.me/+gpMBfd7Ka29iYWMy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" justify-center px-8 py-3 bg-blue-500 text-white text-base font-semibold rounded-lg 
+                    className=" justify-center px-8 py-4 bg-blue-500 text-white text-base font-semibold rounded-lg 
                        hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 text-center md:hidden flex"
                 >
                     BEPUL QATNASHISH
