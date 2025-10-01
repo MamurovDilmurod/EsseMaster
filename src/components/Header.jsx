@@ -19,7 +19,7 @@ const Header = () => {
 
                 {/* Title Mobile */}
                 <div className="md:hidden flex">
-                    <h1 className="text-2xl uppercase sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight md:leading-snug">
+                    <h1 className="text-3xl uppercase sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight md:leading-snug">
                         SAT matematikdan <span className="text-blue-600">700+ ball</span> olish va{" "}
                         <span className="block md:inline">Testlarni oson yechish usullari. </span>
                     </h1>
