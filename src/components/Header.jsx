@@ -2,140 +2,88 @@ import React from "react";
 import { FaCheckCircle, FaClock, FaGift } from "react-icons/fa";
 import image from "../assets/IMG_2738.png";
 
-const Header2222 = () => {
+const Header = () => {
     return (
         <header className="w-full font-sans bg-white">
-            <div className="grid items-center gap-6 px-6 py-10 mx-auto max-w-7xl md:grid-cols-2 md:gap-12">
-                {/* --- MOBIL TEPA BLOK: SANA & NARX BIR QATOR --- */}
-                <div className="flex items-center justify-center w-full gap-6 p-2 mb-1 bg-white shadow-md md:hidden rounded-xl">
+            <div className="flex flex-col items-center max-w-3xl gap-8 px-6 py-10 mx-auto text-center">
+
+                {/* Sana va narx */}
+                <div className="flex items-center justify-center w-full gap-6 p-2 bg-white shadow-md rounded-xl">
                     <p className="flex items-center gap-2 text-lg font-bold text-gray-700">
                         <FaClock className="font-semibold text-blue-600" />
-                        7–8-oktyabr | 20:00
+                        13-14-oktyabr  | 20:30
                     </p>
-                    {/* <p className="text-lg font-medium text-gray-700">
+                    <p className="hidden text-lg font-medium text-gray-700 md:flex">
                         Narxi: <span className="font-bold text-blue-600">BEPUL</span>
-                    </p> */}
+                    </p>
                 </div>
 
-                {/* Title Mobile */}
-                <div className="flex md:hidden">
-                    <h1 className="text-3xl font-extrabold leading-tight text-gray-900 uppercase sm:text-3xl md:text-5xl md:leading-snug">
-                        SAT matematikdan <span className="text-blue-600">700+ ball</span> olish va{" "}
-                        <span className="block md:inline">Testlarni oson yechish usullari. </span>
-                    </h1>
-                </div>
-                {/* RIGHT IMAGE MOBILE */}
-                <div className="flex justify-center mb-1 md:hidden">
-                    <img
-                        src={image}
-                        alt="Mentor"
-                        className="object-cover w-64 transition-transform duration-500 sm:w-72 rounded-3xl"
-                    />
-                </div>
+                {/* Sarlavha */}
+                <h1
+                    className="text-2xl font-extrabold leading-snug text-center text-gray-900 uppercase sm:text-3xl md:text-5xl"
+                >
+                    Matematika ustozlari oylik daromadingizni{" "}
+                    <span className="text-blue-600">1000$ gacha</span> chiqarish imkoniyati
 
-                {/* Mobileda btn
+                </h1>
+
+
+                {/* Rasm */}
+                <img
+                    src={image}
+                    alt="Mentor"
+                    className="object-cover w-64 transition-transform duration-500 sm:w-80 md:w-[400px] rounded-3xl"
+                />
+
+                {/* 1-tugma (rasm tagida) */}
                 <a
-                    href="https://t.me/+gpMBfd7Ka29iYWMy"
+                    href="https://t.me/mahliyo_ataxonova"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex justify-center px-8 py-3 text-base font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:scale-105 md:hidden"
+                    className="justify-center px-20 py-5 text-lg font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg md:px-[270px] mt-[-33px] md:py-6 md:inline-flex hover:bg-blue-600 hover:scale-105"
                 >
                     BEPUL QATNASHISH
-                </a> */}
+                </a>
 
-                {/* LEFT CONTENT */}
-                <div className="space-y-8">
-                    {/* Date & Price DESKTOP ONLY */}
-                    <div className="flex-wrap hidden gap-6 font-medium text-gray-700 md:flex">
-                        <p className="flex items-center gap-2 text-lg md:text-xl">
-                            <FaClock className="text-blue-600" />
-                            7–8-oktyabr | 20:00
-                        </p>
-                        <p className="flex items-center gap-2 text-lg md:text-xl">
-                            Narxi: <span className="font-bold text-blue-600">BEPUL</span>
-                        </p>
-                    </div>
+                {/* Bo‘lim sarlavhasi */}
+                <h2 className="mt-1 text-xl font-extrabold text-black sm:text-2xl">
+                    Vebinarda siz bilan:
+                </h2>
 
-                    {/* Title */}
-                    <div className="hidden md:flex">
-                        <h1 className="text-2xl font-extrabold leading-tight text-gray-900 uppercase sm:text-3xl md:text-5xl md:leading-snug">
-                            SAT matematikdan <span className="font-bold text-blue-600">700+ ball</span> olish va{" "}
-                            <span className="block md:inline ">Testlarni oson yechish usullari. </span>
-                        </h1>
-                    </div>
-                    {/* Mobileda btn */}
-                    <div className=" relative top-[-65px]">
-                        <a
-                            href="https://t.me/+gpMBfd7Ka29iYWMy"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex justify-center px-8 py-6 text-base font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:scale-105 md:hidden"
-                        >
-                            BEPUL QATNASHISH
-                        </a>
-                    </div>
-                    {/* Subtitle */}
-                    <div className="!mt-[-20px]">
-                        <h2 className="text-xl font-extrabold sm:text-2xl text-blak">
-                            Vebinarda siz bilan:
-                        </h2>
+                {/* Ro‘yxat */}
+                <ul className="space-y-2 text-lg font-semibold text-left text-gray-900 sm:text-xl">
+                    <li className="flex items-center gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
+                        Qanday qilib ingliz tilini bilmasangiz ham 2 oyda SAT MATH’dan 700+ ball olish yo‘llari
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
+                        SAT testlarini oson yechish usullari.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
+                        Bir yilda qo‘shimcha 90 mln daromadga chiqish formulasi
+                    </li>
+                </ul>
 
-                        {/* Benefits */}
-                        <ul className="space-y-4 text-lg font-semibold text-gray-900 sm:text-xl">
-                            <li className="flex items-center gap-3">
-                                <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                                Qanday qilib ingliz tilini bilmasangiz ham 2 oyda SAT MATH’dan 700+ ball olish formulasi
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                                SAT testlarini oson yechish usullari.
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                                SAT sertifikati orqali 50% ustama olish imkoniyatlarini bilib olasiz
-                            </li>
-                        </ul>
-
-
-                    </div>
-                    {/* CTA Button */}
-                    <a
-                        href="https://t.me/+gpMBfd7Ka29iYWMy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="justify-center hidden px-8 py-3 text-base font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg md:inline-flex hover:bg-blue-600 hover:scale-105"
-                    >
-                        BEPUL QATNASHISH
-                    </a>
-
-
-
-                    {/* Bonus Block */}
-                    <div className="flex items-center gap-3 p-4 bg-gray-100 border border-gray-200 shadow-sm rounded-2xl">
-                        <FaGift className="text-3xl text-red-500" />
-                        <h3 className="text-base font-medium text-gray-600 sm:text-lg">
-                            Hoziroq telegram kanalimga o'ting va{" "}
-                            <span className="font-bold text-black ">
-                                10 ta BONUS mini darsimga
-                            </span>{" "}
-                            ega bo'ling
-                        </h3>
-                    </div>
+                {/* Bonus bloki */}
+                <div className="flex items-center gap-3 p-4 mt-4 bg-gray-100 border border-gray-200 shadow-sm rounded-2xl">
+                    <FaGift className="text-3xl text-red-500" />
+                    <h3 className="text-base font-medium text-left text-gray-600 sm:text-lg">
+                        Hoziroq telegram kanalimga o'ting va{" "}
+                        <span className="font-bold text-black">
+                            10 ta BONUS mini darsimga
+                        </span>{" "}
+                        ega bo'ling
+                    </h3>
                 </div>
 
-                {/* RIGHT IMAGE DESKTOP ONLY */}
-                <div className="justify-center hidden md:flex md:justify-end">
-                    <img
-                        src={image}
-                        alt="Mentor"
-                        className="w-72 sm:w-80 md:w-[450px] rounded-3xl object-cover transition-transform duration-500"
-                    />
-                </div>
+                {/* 2-tugma (eng pastda) */}
                 <a
-                    href="https://t.me/+gpMBfd7Ka29iYWMy"
+                    href="https://t.me/mahliyo_ataxonova"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex justify-center px-8 py-6 text-base font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:scale-105 md:hidden"
+                    className="justify-center px-20 py-5 text-lg font-semibold text-center text-white transition-all duration-200 transform bg-blue-500 rounded-lg md:px-[270px] md:py-6 md:inline-flex hover:bg-blue-600 hover:scale-105"
                 >
                     BEPUL QATNASHISH
                 </a>
@@ -144,4 +92,6 @@ const Header2222 = () => {
     );
 };
 
-export default Header2222;
+export default Header;
+
+
