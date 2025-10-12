@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex flex-col items-center max-w-3xl gap-8 px-6 py-10 mx-auto text-center">
 
                 {/* Sana va narx */}
-                <div className="flex items-center justify-center w-full gap-6 p-2 bg-white shadow-md rounded-xl">
+                <div className="flex items-center justify-center w-full gap-6 p-2 font-sans bg-white shadow-md rounded-xl">
                     <p className="flex items-center gap-2 text-lg font-bold text-gray-700">
                         <FaClock className="font-semibold text-blue-600" />
                         13-14-oktyabr  | 20:30
@@ -19,13 +19,14 @@ const Header = () => {
                 </div>
 
                 {/* Sarlavha */}
-                <h1
-                    className="text-2xl font-extrabold leading-snug text-center text-gray-900 uppercase sm:text-3xl md:text-5xl"
-                >
+                <h1 className="text-2xl font-extrabold leading-snug text-center text-gray-900 uppercase sm:text-3xl md:text-5xl font-bebas">
                     Matematika ustozlari oylik daromadingizni{" "}
                     <span className="text-blue-600">1000$ gacha</span> chiqarish imkoniyati
-
+                    <span className="block mt-2 text-xl font-normal text-gray-700 normal-case sm:text-2xl md:text-3xl">
+                        Testlarni oson yechish usullari
+                    </span>
                 </h1>
+
 
 
                 {/* Rasm */}
