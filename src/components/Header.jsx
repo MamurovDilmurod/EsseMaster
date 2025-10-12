@@ -5,7 +5,7 @@ import image from "../assets/IMG_2738.png";
 const Header = () => {
     return (
         <header className="w-full font-sans bg-white">
-            <div className="flex flex-col items-center max-w-3xl gap-5 px-6 py-10 mx-auto text-center md:gap-8">
+            <div className="flex flex-col items-center max-w-3xl gap-8 px-6 py-10 mx-auto text-center">
 
                 {/* Sana va narx */}
                 <div className="flex items-center justify-center w-full gap-6 p-2 font-sans bg-white shadow-md rounded-xl">
@@ -44,25 +44,34 @@ const Header = () => {
                 </a>
 
                 {/* Bo‘lim sarlavhasi */}
-                <h2 className="mt-1 text-xl font-extrabold text-right text-black sm:text-2xl">
+                <h2 className="mt-1 text-xl font-extrabold text-black sm:text-2xl">
                     Vebinarda siz bilan:
                 </h2>
 
                 {/* Ro‘yxat */}
-                <ul className="space-y-2 text-lg font-bold text-left text-gray-900 sm:text-xl">
-                    <li className="flex items-center gap-3">
-                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                        Qanday qilib ingliz tilini bilmasangiz ham 2 oyda SAT MATH’dan 700+ ball olish yo‘llari
+                <ul className="space-y-4 text-lg font-semibold text-left text-gray-900 sm:text-xl">
+                    <li className="flex items-start gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 mt-1 text-blue-500 sm:w-6 sm:h-6" />
+                        <span>
+                            Qanday qilib <span className="font-bold">ingliz</span> tilini bilmasangiz ham 2 oyda SAT MATH’dan <span className="font-bold">700+ ball</span> olish yo‘llari
+                        </span>
                     </li>
-                    <li className="flex items-center gap-3">
-                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                        SAT testlarini oson yechish usullari.
+
+                    <li className="flex items-start gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 mt-1 text-blue-500 sm:w-6 sm:h-6" />
+                        <span>
+                            SAT testlarini oson yechish usullari.
+                        </span>
                     </li>
-                    <li className="flex items-center gap-3">
-                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 text-blue-500 sm:w-6 sm:h-6" />
-                        Bir yilda qo‘shimcha 90 mln daromadga chiqish formulasi
+
+                    <li className="flex items-start gap-3">
+                        <FaCheckCircle className="flex-shrink-0 w-5 h-5 mt-1 text-blue-500 sm:w-6 sm:h-6" />
+                        <span>
+                            Bir yilda qo‘shimcha <span className="font-bold">90 mln so'm</span> daromadga chiqish formulasi
+                        </span>
                     </li>
                 </ul>
+
 
                 {/* Bonus bloki */}
                 <div className="flex items-center gap-3 p-4 mt-4 bg-gray-100 border border-gray-200 shadow-sm rounded-2xl">
