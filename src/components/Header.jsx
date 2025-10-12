@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
 
                 {/* Sarlavha */}
-                <h1 className="text-2xl font-extrabold leading-snug text-center text-gray-900 uppercase sm:text-3xl md:text-5xl font-bebas">
+                <h1 className="text-3xl font-extrabold leading-snug text-center text-gray-900 uppercase sm:text-3xl md:text-5xl font-bebas">
                     Matematika ustozlari oylik daromadingizni{" "}
                     <span className="text-blue-600">1000$ gacha</span> chiqarish imkoniyati
                     <span className="block mt-2 text-xl font-normal text-gray-700 normal-case sm:text-2xl md:text-3xl">
